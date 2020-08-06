@@ -1,0 +1,19 @@
+{
+  "name": "migrate-and-seed-pg",
+  "version": "0.1.0",
+  "description": "Seeding a Postgres DB",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback"
+  },
+  "author": "Ahmed Alhassan",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "knex": "^0.21.2",
+    "pg": "^8.3.0"
+  }
+}
