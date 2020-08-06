@@ -4,6 +4,7 @@
   "description": "Seeding a Postgres DB",
   "main": "index.js",
   "scripts": {
+    "start:db": "docker-compose up -d",
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback"
   },
