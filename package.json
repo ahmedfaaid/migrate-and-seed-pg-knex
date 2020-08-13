@@ -6,7 +6,8 @@
   "scripts": {
     "start:db": "docker-compose up -d",
     "migrate": "knex migrate:latest",
-    "rollback": "knex migrate:rollback"
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run"
   },
   "author": "Ahmed Alhassan",
   "license": "MIT",
@@ -15,6 +16,7 @@
     "express": "^4.17.1",
     "faker": "^4.1.0",
     "knex": "^0.21.2",
-    "pg": "^8.3.0"
+    "pg": "^8.3.0",
+    "uuidv4": "^6.2.2"
   }
 }
