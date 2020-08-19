@@ -15,8 +15,10 @@ exports.seed = function (knex) {
           province: 'ON',
           postalCode: 'M4L 1V3',
           description: 'You will love it',
+          disposition: 'sale',
+          price: 410000,
           longitude: -79.302742,
-          latitude: 43.678001,
+          latitude: 43.678001
         },
         {
           id: uuid(),
@@ -26,8 +28,10 @@ exports.seed = function (knex) {
           province: 'ON',
           postalCode: 'M4C 2G5',
           description: 'Great location, nice unit',
+          disposition: 'rent',
+          price: 1600,
           longitude: -79.299187,
-          latitude: 43.695019,
+          latitude: 43.695019
         },
         {
           id: uuid(),
@@ -37,8 +41,10 @@ exports.seed = function (knex) {
           province: 'ON',
           postalCode: 'M4K 2P5',
           description: 'Very close to downtown and the Danforth',
+          disposition: 'rent',
+          price: 1575,
           longitude: -79.357468,
-          latitude: 43.675171,
+          latitude: 43.675171
         }
       ]);
     });
