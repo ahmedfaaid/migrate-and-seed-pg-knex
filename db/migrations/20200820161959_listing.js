@@ -13,6 +13,8 @@ exports.up = function (knex, Promise) {
     table.float('longitude').notNullable();
     table.float('latitude').notNullable();
     table.timestamp('createdAt', { precision: 6 }).defaultTo(knex.fn.now());
+    table.uuid('imageId');
+    table.foreign('imageId').references('id').inTable('image');
   });
 };
 
